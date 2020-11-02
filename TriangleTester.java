@@ -10,10 +10,12 @@ public class TriangleTester {
     Point d = new Point (0.0, 0.0);
     Point e = new Point (2.0, 0.0);
     Point f = new Point (1.0, 1.732);
+    Triangle t3 = new Triangle (d, e, f);
 
     System.out.println(t1.getPerimeter());
     System.out.println(t2.getPerimeter());
-    System.out.println(t2.getArea(a, b, c));
-    System.out.println(t1.classify(d, e, f));
+    System.out.println(t2.getArea());
+    System.out.println(t1.classify());
+    System.out.println(t3.classify());
   }
 }
