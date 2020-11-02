@@ -26,4 +26,8 @@ public class Point {
                     Math.pow((other.getY() - this.getY()), 2));
   }
 
+  public boolean equals (Point other) {
+    return (other != null) && (x == other.x && y == other.y);
+  }
+
 }
