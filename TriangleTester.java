@@ -12,10 +12,19 @@ public class TriangleTester {
     Point f = new Point (1.0, 1.732);
     Triangle t3 = new Triangle (d, e, f);
 
+    Point g = new Point (1.0, 1.0);
+
     System.out.println(t1.getPerimeter());
     System.out.println(t2.getPerimeter());
     System.out.println(t2.getArea());
     System.out.println(t1.classify());
     System.out.println(t3.classify());
+
+    System.out.println(t3.toString());
+    System.out.println(t2.toString());
+    System.out.println(t1.toString());
+
+    t3.setVertex(0, g);
+    System.out.println(t3.toString());
   }
 }
